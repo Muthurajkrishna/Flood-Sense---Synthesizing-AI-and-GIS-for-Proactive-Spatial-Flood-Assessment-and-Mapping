@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Project Description</title>
+   <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    padding-top: 128px;
+}
+
+h2 {
+    color: #333;
+}
+
+.overview, .mission, .features, .sample-images, .get-involved, .contact-us {
+    margin-bottom: 30px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FF5733;
+  transform: scale(1.1);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .project-members ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .project-members li {
+    margin-bottom: 10px;
+  }
+
+  /* Animation styles */
+  @keyframes pulse {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(0.8); }
+  }
+
+  .animation {
+    display: inline-block;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    animation: pulse 1s infinite;
+  }
+
+  /* Change colors and animations as needed */
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+   </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="#">Flood Prediction using SAR Images</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/templates/index.html">Home</a></li>
+          <li><a href="/templates/about.html">About</a></li>
+          
+          <li><a href="#footer-animation">Contact</a></li>
+        </ul>
+      </nav>
+    
+    <main>
+        <section class="overview">
+            <h2>About | Project Overview</h2>
+            <p>In flood-prone regions, the lack of accurate and timely spatial assessments hampers effective response efforts, leading to increased risks to lives and property. Current methods for flood analysis often rely on manual interpretation of historical data, resulting in inefficiencies and inaccuracies, To prevent this we are going to develop an application that predicts the flood prone areas based on past flood SAR imageries. </p>
+        </section>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p> To design a Flood prediction system in Deep learning using SAR images.
+                To integrate the Flood prediction system with the GIS for mapping and region selection.
+                To develop a Web application that User need to select the region for flood prediction.  
+                </p>
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Develop a robust flood prediction system using deep learning techniques on Synthetic Aperture Radar (SAR) images.
+                </li>
+                <li>Enhance feature extraction from SAR data and multi-scale features for accurate flood identification.
+                </li>
+                <li>Integrating the prediction system with GIS for mapping.
+                </li>
+                <li>[Validate the system's efficacy through experiments, showcasing its superior performance in locating water boundaries and detecting tiny water bodies in complex scenes.
+                </li>
+
+            </ul>
+        </section>
+        <section class="sample-images">
+            <h2>Sample Images</h2>
+            <div class="image-grid">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <img src="image4.jpg" alt="Image 4">
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        
+        <div id="footer-animation">
+          <p>Contact us:</p>
+          <div class="animation">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="project-members">
+          <p>Project Members:</p>
+          <ul>
+            <li>Nedunchezhian M - +91 6379305685</li>
+            <li>Ajith R - +91 9047722315</li>
+            <li>Muthuraj M - +91 93443 30613</li>
+            <li>Aswin Kumar K - +91 80721 16212</li>
+          </ul>
+        </div>
+      </footer>
+      
+</body>
+</html>
